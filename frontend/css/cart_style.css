@@ -1,0 +1,257 @@
+#cart h3 {
+    font-size: 40px;
+    color: #2f2fa2;
+    text-align: center;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.products {
+    margin: 2rem 0;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+    color: #686868;
+}
+
+.product > *:nth-child(1n + 3) {
+    justify-self: center;
+}
+
+.product input[type="number"]{
+    width: 50px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.product h5 {
+    font-size: 1.5rem;
+}
+
+.product .product-name h5 {
+    font-size: 1.5rem;
+}
+
+.product .product-name h6 {
+    font-size: 1.25rem;
+}
+
+.product i:hover {
+    cursor: pointer;
+}
+
+.total {
+    float: right;
+    border: 3px solid #707070;
+    margin: 1rem 0;
+    width: 170px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total h5 {
+    font-size: 1.5rem;
+    color: #707070;;
+    font-weight: 500;
+}
+
+.total #total-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2f2fa2;
+}
+
+.delivery-options,
+.payment-options {
+    margin-bottom: 20px;
+}
+
+.delivery-options h4,
+.payment-options h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #707070;
+    text-transform: uppercase;
+}
+
+.delivery-icons,
+.payment-icons {
+    display: flex;
+}
+
+.icon {
+    text-align: center;
+    font-size: 2rem;
+    border: 3px solid #707070;
+    padding: 10px;
+    margin-right: 10px;
+    color: #707070;
+    width: 150px;
+    height: 150px;
+}
+
+.icon p {
+    font-size: 1.25rem;
+}
+
+.icon:hover {
+    background: #707070;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.next {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next a {
+    color: #707070;
+    padding: 10px 30px;
+    border: 3px solid #707070;
+}
+
+.next a:hover {
+    color:#fff;
+    background: #707070; 
+}
+
+.next a i {
+   font-size: 2rem;
+}
+
+/* Media */
+@media(max-width: 700px) {
+    #cart h3 {
+        font-size: 2rem;
+    }
+    
+    .product input[type="number"]{
+        width: 40px;
+        font-size: 0.5rem;
+    }
+    
+    .product img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .product h5 {
+        font-size: 1.25rem;
+    }
+    
+    .product .product-name h5 {
+        font-size: 1.25rem;
+    }
+    
+    .product .product-name h6 {
+        font-size: 1.25rem;
+    }
+
+    .product i {
+        font-size: 1rem;
+    }
+
+    .product > *:first-child {
+        justify-self: start;
+    }
+
+    .product > *:nth-child(4) {
+        justify-self: center;
+    }
+
+    .product > *:last-child {
+        justify-self: end;
+    }
+
+    .total {
+        float: none;
+        border: 2px solid #707070;
+        width: 130px;
+    }
+    
+    .total h5 {
+        font-size: 1rem;
+    }
+    
+    .total #total-price {
+        font-size: 1rem;
+    }
+
+    .delivery-options h4,
+    .payment-options h4 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .delivery-icons,
+    .payment-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        text-align: center;
+        font-size: 1rem;
+        border: 2px solid #707070;
+        padding: 5px;
+        margin-right: 5px;
+        color: #707070;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .icon p {
+        font-size: 0.5rem;
+    }
+
+    .next {
+        justify-content: center;
+    }
+
+}
+    
+@media(max-width: 600px) {
+    .container {
+        padding: 0 .5rem;
+    }
+
+    .product input[type="number"]{
+        width: 30px;
+        font-size: 0.35rem;
+        margin-right: 10px;
+    }
+    
+    .product img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .product h5 {
+        font-size: .75rem;
+        margin-right: 10px;
+    }
+    
+    .product .product-name h5 {
+        font-size: 0.75rem;
+    }
+    
+    .product .product-name h6 {
+        font-size: 0.5rem;
+    }
+}

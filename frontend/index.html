@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fada548c3.js" crossorigin="anonymous"></script>
+    <title>Demo Shop</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-container">    
+            <a href="#">
+                <h3><span class="primary-text">Demo</span>Shop<i class="fas fa-store"></i></h3>
+            </a>
+            <form id="search-form">
+                <input type="text" id="search" name="search" placeholder="Search for products...">
+                <button type="submit" class="search-btn"><i class="fas fa-search fa-1"></i></button>
+            </form>
+            <h5>About DemoShop</h5>
+            <div class="icons">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
+        <nav id="main-nav" class="container">
+            <ul>
+                <div class="nav-list">
+                    <li>Brands</li>
+                    <li>Categories</li>
+                    <li>New</li>
+                    <li>Exclusive Items</li>
+                    <li>Membersip</li>
+                </div>
+                <div class="cart">
+                    <a href="./cart.html" onclick="addCartItemsToDOM"><i class="fas fa-shopping-basket fa-2x" id="cart-icon"></i></a>
+                    <span class="cart-items-num" id="cart-items-num">0</span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sorting">
+        <div class="container">
+            <form action="" id="form">
+                <select name="sort" id="sort" class="select">
+                    <option value="">Sort</option>
+                    <option value="created-asc">Newest</option>
+                    <option value="price-asc">Price-Asc</option>
+                    <option value="price-desc">Price-Desc</option>
+                    <option value="name-asc">Name-Asc</option>
+                    <option value="name-desc">Name-Desc</option>
+                </select>
+                <select name="sort" id="brand" class="select"></select>
+                <select name="sort" id="category" class="select"></select>
+                <div>
+                    <label for="min">Min. $</label>
+                    <input type="number" id="min" name="min">
+                </div>
+                <div>
+                    <label for="max">Max. $</label>
+                    <input type="number" id="max" name="max">
+                </div>
+                <button type="submit" id="button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="container">
+            <div class="products" id="products"></div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div>
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="">Online Shopping</a></li>
+                    <li><a href="">Shipping and Delivery</a></li>
+                    <li><a href="">My Orders</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal Information</h3>
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">About DemoShop</a></li>
+                    <li><a href="">All Stores</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Payment Methods</h3>
+                <div class="payment-icons">
+                    <a href=""><i class="fab fa-cc-visa fa-2x"></i></a>
+                    <a href=""><i class="fab fa-paypal fa-2x"></i>   </a>
+                    <a href=""><i class="fab fa-apple-pay fa-2x"></i></a>
+                    <a href=""><i class="fab fa-amazon-pay fa-2x"></i></a>
+                </div>
+            </div>
+            <div>
+                <p><p>Copyright &copy; 2020 DemoShop, All Rights Reserved</p></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
