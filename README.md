@@ -22,4 +22,5 @@ Simple Rest Api which includes only GET method.
 ## Demo
 
 <img src="./demo_img/demo22.PNG" />
+<hr>
 <img src="./demo_img/demo23.PNG" />
